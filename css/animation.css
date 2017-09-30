@@ -1,0 +1,110 @@
+#rotate {
+  transform: rotate(45deg);
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background-color: indigo;
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);}
+  to {
+    -moz-transform:rotate(360deg);}
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);}
+  to {
+    -webkit-transform: rotate(360deg);}
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);}
+}
+
+#skew {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background-color: gold;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  animation-name: skew;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@-moz-keyframes skew {
+  0%,50%,100%{transform: skew(1deg, 50deg);}
+  25%,75%{transform: skew(35deg, 1deg);
+}
+@-webkit-keyframes skew {
+  0%,50%,100%{transform: skew(1deg, 50deg);}
+  25%,75%{transform: skew(35deg, 1deg);}
+}
+@keyframes skew {
+  0%,50%,100%{transform: skew(1deg, 50deg);}
+  25%,75%{transform: skew(35deg, 1deg);} 
+}
+
+#all {
+  transform: rotate(45deg) skew(-10deg, 30deg);
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background-color: blue;
+  animation-name: turn;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+}
+
+@-moz-keyframes turn {
+  from {
+    -moz-transform: rotate(0deg) 
+    skew(-10deg, 30deg);}
+  to {
+    -moz-transform:rotate(360deg)
+    skew(-10deg, 30deg);
+}
+@-webkit-keyframes turn {
+  from {
+    -webkit-transform: rotate(0deg)
+    skew(-10deg, 30deg);}
+  to {
+    -webkit-transform: rotate(360deg)
+    skew(-10deg, 30deg);
+}
+@keyframes turn {
+  from {
+    transform: rotate(0deg)
+    skew(-10deg, 30deg);}
+  to {
+    transform: rotate(360deg)
+    skew(-10deg, 30deg);
+}
+
+#animate {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: ;
+  animation-duration: 4s;
+}

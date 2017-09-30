@@ -25,30 +25,3 @@ h3{
   text-align: center;
 }
 
-#rotate {
-  transform: rotate(45deg);
-  width: 150px;
-  height: 150px;
-  position: relative;
-  background-color: indigo;
-  animation-name: spin;
-  animation-duration: 4s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
-  font-size: 50px;
-  text-align: center;
-  line-height: 200px;
-}
-
-@-moz-keyframes spin {
-  from {-moz-transform: rotate(0deg);}
-  to {-moz-transform:rotate(360deg);}
-}
-@-webkit-keyframes spin {
-  from {-webkit-transform: rotate(0deg);}
-  to {-webkit-transform: rotate(360deg);}
-}
-@keyframes spin {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
