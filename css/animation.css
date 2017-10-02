@@ -49,7 +49,7 @@
 
 @-moz-keyframes skew {
   0%,50%,100%{transform: skew(1deg, 50deg);}
-  25%,75%{transform: skew(35deg, 1deg);
+  25%,75%{transform: skew(35deg, 1deg);}
 }
 @-webkit-keyframes skew {
   0%,50%,100%{transform: skew(1deg, 50deg);}
@@ -81,7 +81,7 @@
     skew(-10deg, 30deg);}
   to {
     -moz-transform:rotate(360deg)
-    skew(-10deg, 30deg);
+    skew(-10deg, 30deg);}
 }
 @-webkit-keyframes turn {
   from {
@@ -89,7 +89,7 @@
     skew(-10deg, 30deg);}
   to {
     -webkit-transform: rotate(360deg)
-    skew(-10deg, 30deg);
+    skew(-10deg, 30deg);}
 }
 @keyframes turn {
   from {
@@ -97,7 +97,7 @@
     skew(-10deg, 30deg);}
   to {
     transform: rotate(360deg)
-    skew(-10deg, 30deg);
+    skew(-10deg, 30deg);}
 }
 
 #animate {
@@ -105,6 +105,29 @@
   height: 100px;
   position: relative;
   background-color: red;
-  animation-name: ;
+  animation-name: slide;
   animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0,100,250,250,10);
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+
+@-moz-keyframes slide {
+  0% { top: 0; left: 0; background-color: red}
+  100%{ top: 0; left: 100px; background-color: orange}
+}
+@-webkit-keyframes slide {
+  0% { top: 0; left: 0; background-color: red}
+  100%{ top: 0; left: 100px; background-color: orange}
+}
+@keyframes {
+  0% { top: 0; left: 0; background-color: red}
+  100%{ top: 0; left: 100px; background-color: orange}
+}
+
+#pseudo:hover {
+  background-color: #0099ff
 }
